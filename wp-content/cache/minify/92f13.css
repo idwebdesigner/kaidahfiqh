@@ -230,7 +230,7 @@ p{padding:40px
 0 0}#fullpage #infoMenu li
 a{color:#fff}#fullpage
 .testbox{width:200px;height:200px;margin:20px;background:red}#fp-nav ul>li{display:block;width:auto;height:auto;margin:0}#fp-nav ul>li
-a{width:0;height:0;outline:0!important;margin:9px
+a{width:0;height:0;outline:0!important;margin:6px
 4px;background:0 0;border:1px
 solid #26d886;border-radius:100%;transition:width .25s ease-in-out,height .25s ease-in-out,margin .25s ease-in-out,border-color .25s ease-in-out}#fp-nav ul>li
 a.active{opacity:1;width:8px;height:8px;margin:9px
