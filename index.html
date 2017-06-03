@@ -38,6 +38,15 @@
 	</style>
 
 	<script type="text/javascript" src="wp-content/cache/minify/df983.js"></script>
+	<script type="text/javascript">
+	function copyToClipboard(element) {
+	var $temp = $("<input>");
+	$("body").append($temp);
+	$temp.val($(element).text()).select();
+	document.execCommand("copy");
+	$temp.remove();
+	}
+	</script>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
@@ -77,10 +86,6 @@
 											<p>^1600 Snapchat und vieles mehr!</p>
 										</div>
 									</div>
-									<div class="content -light"> SHARE
-
-
-									</div>
 								</div>
 							</div>
 							<div class="cornercontent">
@@ -105,8 +110,11 @@
 							<div class="row row-align-middle">
 								<div class="gr-6 gr-12@mobile">
 									<div class="content -light">
-										<h1 class="title animated-title"><span><b>اَلْاُمُوْرُ بِمَقَاصِدِهَا </b><br></span></h1>
+										<h1 id="p1" class="title animated-title"><span><b>اَلْاُمُوْرُ بِمَقَاصِدِهَا </b><br></span></h1>
 										<h4 style="color: #ffffff">Setiap perkara itu sesuai dengan maksudnya.</h4>
+									</div>
+									<div class="content -light">
+									<button onclick="copyToClipboard('#p1')">COPY TO CLIPBOARD</button>
 									</div>
 								</div>
 							</div>
@@ -1362,8 +1370,6 @@
 	<noscript>
 		<img alt="" src="https://secure.leadforensics.com/102849.png" style="display:none;" />
 	</noscript>
-
-<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5508c131091b4412"></script> 
 
 </body>
 
