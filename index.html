@@ -131,6 +131,7 @@ function myFunction() {
 
 <body class="home page-template page-template-template-fullpage page-template-template-fullpage-php page page-id-2">
 
+
 	<header class="site-header">
 		<span style="padding-top:25px;padding-left:25px;position:fixed;" data-toggle="modal" data-target="#myModal"> <span class="_sr-only">Kaidah Fiqh</span>  <span class="hamburger hamburger-light"> <span></span>  <span></span>  <span></span>  <span></span> </span>
 		</span>
@@ -138,7 +139,9 @@ function myFunction() {
 		</a>
 		<button class="btn -back" id="browserback"><span class="_sr-only">Kaidah Fiqh</span>
 		</button>
+
 	</header>
+
 	<div canvas="container">
 		<section role="main" class="site-container">
 			<div id="fullpage">
@@ -167,6 +170,9 @@ function myFunction() {
 								</div>
 								<a class="iconimage" href="#news">
 									<img src="https://www.thirdman.at/wp-content/uploads/2016/10/scroll-down.png" />
+								</a>
+                                <a class="iconimage" data-toggle="modal" data-target="#myModaldisquss">
+									<img style="padding-left:20px;height:30px;width:auto;padding-top:-250px;" src="img/chat.png" />
 								</a>
 							</div>
 						</div>
@@ -1876,6 +1882,47 @@ function myFunction() {
   </div>
 </div>
 
+<!-- Modal Disquss -->
+<div style="opacity: 0.8;" id="myModaldisquss" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">اَلْاُمُوْرُ بِمَقَاصِدِهَا</h4>
+        <h5>Segala sesuatu tergantung pada tujuannya.</h5>
+      </div>
+      <div class="modal-body" style="font-size:12px; ">
+            <div id="disqus_thread"></div>
+            <script>
+
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://kaidah-fiqh.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </div>
+      <div class="modal-footer" style="text-align:left;font-size:10px;">
+          Powered by IDWEBDesigner
+      </div>
+    </div>
+
+  </div>
+</div>
+
 <!-- Modal Contoh Kasus -->
 <div style="opacity: 0.8;" id="myModal1" class="modal fade" role="dialog">
   <div class="modal-dialog">
@@ -1988,6 +2035,7 @@ function myFunction() {
 	<noscript>
 		<img alt="" src="https://secure.leadforensics.com/102849.png" style="display:none;" />
 	</noscript>
+    <script id="dsq-count-scr" src="//kaidah-fiqh.disqus.com/count.js" async></script>
 
 </body>
 
