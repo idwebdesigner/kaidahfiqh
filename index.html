@@ -29,11 +29,8 @@
 	<link rel="alternate" type="application/rss+xml" title="Thirdman &raquo; Startseite Kommentar-Feed" href="http://designer.web.id" />
 
   <link rel="stylesheet" href="android/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="android/modal.css">
-  <script src="android/modal.js"></script>
+  <script src="android/jquery.min.js"></script>
+  <script src="android/bootstrap.min.js"></script>
 
 	<style type="text/css">
 		img.wp-smiley,img.emoji{display:inline !important;border:none !important;box-shadow:none !important;height:1em !important;width:1em !important;margin:0
@@ -77,7 +74,7 @@
 <body class="home page-template page-template-template-fullpage page-template-template-fullpage-php page page-id-2">
 
 	<header class="site-header">
-		<span style="padding-top:25px;padding-left:25px;position:fixed;" data-toggle="modal" data-target="#modal-fullscreen"> <span class="_sr-only">Kaidah Fiqh</span>  <span class="hamburger hamburger-light"> <span></span>  <span></span>  <span></span>  <span></span> </span>
+		<span style="padding-top:25px;padding-left:25px;position:fixed;" data-toggle="modal" data-target="#myModal"> <span class="_sr-only">Kaidah Fiqh</span>  <span class="hamburger hamburger-light"> <span></span>  <span></span>  <span></span>  <span></span> </span>
 		</span>
 		<a id="main-logo" class="site-logo logo-light" href="index.html">
 		</a>
@@ -1611,19 +1608,23 @@
 	</div>
 
 
-
-<!-- Modal fullscreen -->
-<div class="modal modal-fullscreen fade" id="modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
+
+    <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 style="color: #ffffff" class="modal-title" id="myModalLabel">Kaidah Fiqh</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Search</h4>
       </div>
-      <div style="color: #ffffff" class="modal-body">
-        ...
+      <div class="modal-body">
+        <p>Add Search function here.<br/><b>This is note to developer.</b> Function will be add shortly :), support us, give feedback and rate in Play Store.<br/><br/>IDWEBDesigner Team</p>
+      </div>
+      <div class="modal-footer">
       </div>
     </div>
+
   </div>
 </div>
 
