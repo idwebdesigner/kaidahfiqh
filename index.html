@@ -189,7 +189,7 @@ function myFunction() {
 									</div>
 									<div class="content -light">
                                     <p style="color: #ffffff;font-size: 12px;" onclick="copyToClipboard('#copy1')">COPY TO CLIPBOARD</p>
-
+                                    <p style="color: #ffffff;font-size: 12px;" data-toggle="modal" data-target="#myModal1">CONTOH KASUS</p>
 									</div>
 								</div>
 							</div>
@@ -1677,196 +1677,227 @@ function myFunction() {
         <h4 class="modal-title">Kaidah Fiqh</h4>
       </div>
       <div class="modal-body">
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Cari kaidah fiqh..">
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Cari kaidah fiqh..">
 
-<table id="myTable">
-  <tr class="header">
-    <th style="width:60%;"></th>
-    <th style="width:40%;"></th>
-  </tr>
-  <tr onclick="document.location = 'index.html#1';">
-    <td>Setiap perkara itu sesuai dengan maksudnya.</td>
-    <td>اَلْاُمُوْرُ بِمَقَاصِدِهَا</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#2';">
-    <td>Sesuatu yang tidak disyaratkan menentukannya secara global dan terperinci, apabila salah dalam menentukannya tidak berbahaya atau tidak berpengaruh.</td>
-    <td>مَا لَا يُشْتَرَطُ لَهُ التَعَرَّضُ جُمْلَةً وَتَفْصِيْلًا اِذَا عَيَّنَهُ وَاَخْطَاءَ لَمْ يَضُرَّ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#3';">
-    <td>Sesuatu yang di dalamnya disyaratkan ta’yin (menentukan), maka jika salah dalam menentukannya akan membatalkan.</td>
-    <td>مَا يُشْتَرَطُ فِيْهِ التَعْيِـيْن ُفَالْخَطَاءُ فِيْهِ مُبْطِلٌ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#4';">
-    <td>Sesuatu yang disyaratkan menentukannya secara global – tidak secara rinci – maka jika salah dalam menentukannya akan berbahaya / berpengaruh.</td>
-    <td>مَا يُشْتَرَطُ التَعَرُّضُ جُمْلَةً لَا تَفْصِيْلًا اِذَا عَيَّنَهُ وَاَخْطَاءَ ضَرَّ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#5';">
-    <td>Tujuan lafal tergantung pada niat orang yang mengucapkannya.</td>
-    <td>مَقَاصِدُ اللَّفْظِ عَلَى نِـيَّـةِ الْلَافِظِ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#6';">
-    <td>Keyakinan itu tidak bisa dihilangkan dengan keragu-raguan.</td>
-    <td>اَلْيَقِيْنُ لَايُزَالُ بِالشَكِّ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#7';">
-    <td>Yang menjadi patokan adalah tetapnya sesuatu menurut keadaan semula.</td>
-    <td>اَلْأَصْلُ بَقَاءُ مَا كَانَ عَلَى مَا كَانَ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#8';">
-    <td>Menurut asalnya setiap orang itu bebas dari tanggungan.</td>
-    <td>اَلْأَصْلُ بَرَاءَةُ الذِّمَّةِ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#9';">
-    <td>Jika seseorang ragu apakah ia sudah mengerjakan sesuatu atau belum, maka ia dianggap belum melakukannya.</td>
-    <td>مَنْ شَكَّ أَفَعَلَ شَيْأً اَمْ لَا فَالْأَصْلُ أَنَّهُ لَمْ يَفْعَلْهُ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#10';">
-    <td>Asal dari segala hukum adalah tidak adanya suatu beban.</td>
-    <td>اَلْأَصْلُ اَلْعَدَمُ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#11';">
-    <td>Pada dasarnya penetapan suatu peristiwa didasarkan pada waktu yang terdekat (dengan peristiwa tersebut).</td>
-    <td>اَلْأَصْلُ فِيْ كُلِّ حَادِثٍ اَنْ يُقَدَّرَ بِاَقْرَبِ الزَّمَانِ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#12';">
-    <td>Asal dari segala seuatu itu adalah boleh, sampai ada dalil (petunjuk) yang menyatakan keharamannya.</td>
-    <td>اَلْأَصْلُ فِي الْاَشْيَاءِ اَلْاِبَاحَةْ حَتَّى يَدُلُّ اَلدَّلِيْلُ عَلَى التَّحْرِيْمِ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#13';">
-    <td>Hukum asal farji adalah haram.</td>
-    <td>اَلْأَصْلُ فِي الْاَبْضَاعِ اَلْحَظْرُ/ اَلتَّحْرِيْمُ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#14';">
-    <td>Asal dari perkataan adalah yang hakiki.</td>
-    <td>اَلْأَصْلُ فِي اْلكَلَامِ اَلْحَقِيْقَةِ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#15';">
-    <td>Asalnya tiap perkara yang datang kemudian adalah tidak ada.</td>
-    <td>اَلْأَصْلُ فِي الْأُمُوْرِ الْعَارِضَةِ اَلْعَدَمُ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#16';">
-    <td>Kesukaran itu mengharuskan adanya kemudahan.</td>
-    <td>اَلْمَشَقَّةُ تَجْلِبُ التَيْسِيْرَ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#17';">
-    <td>Jika suatu perkara itu sempit, maka bisa menjadi longgar.</td>
-    <td>اِذَا ضَاقَ الْاَمْرُ اِتَّسَعَ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#18';">
-    <td>Jika suatu perkara itu longgar, maka menjadi sempit.</td>
-    <td>اِذَا اِتَّسَعَ الْاَمْرُ ضَاقَ </td>
-  </tr>
-  <tr onclick="document.location = 'index.html#19';">
-    <td>Kemudharatan itu dihilangkan.</td>
-    <td>اَلضَّرَرُ يُزَالُ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#20';">
-    <td>Keadaan darurat bisa membolehkan sesuatu yang dilarang.</td>
-    <td>اَلضَّرُوْرَةُ تُبِيْحُ الْمَحْظُوْرَاتِ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#21';">
-    <td>Sesuatu yang dibolehkan karena darurat, disesuaikan dengan kadar kedaruratannya. (Sesuatu yang haram mengerjakannya, haram pula mencarinya.)</td>
-    <td>مَا اُبِيْحُ لِلضَّرُوْرَةِ يُقَدَّرُ بِقَدْرِضَرَرِهَا ( مَاجَازَ لِعُذْرٍ بَطَلَ بِزَوَالِهِ)</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#22';">
-    <td>Kemudharatan tidak boleh dihilangkan dengan kemudharatan yang lain (yang setingkat).</td>
-    <td>اَلضَّرَرُ لَايُزَالُ بِالضَّرَرِ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#23';">
-    <td>Jika dua kerusakan saling berlawanan, maka dipelihara yang lebih berat kemudharatannya dengan melaksanakan yang lebih ringan (madharatnya).</td>
-    <td>إِذَا تَعَارَضَ اَلْمَفْسَدَتَانِ رُوْعِيَ اَعْظَمُهُمَا ضَرَرًا بِاِرْتِكَابِ اَخَفِّهِمَا</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#24';">
-    <td>Menolak kerusakan lebih didahulukan daripada menarik kemaslahatan.</td>
-    <td>دَرْءُ الْمَفَاسِدِ اَوْلَى مِنْ جَلْبِ الْمَصَالِحِ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#25';">
-    <td>Kebutuhan itu menempati tempatnya darurat, baik kebutuhan yang bersifat umum maupun yang khusus</td>
-    <td>اَلْحَاجَةُ تَنْزِلُ مَنْزِلَةَ الضَّرُوْرَةِ عَامَةً كَانَتْ اَوْ خَاصَةً</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#26';">
-    <td>Adat-kebiasaan bisa dijadikan patokan hukum.</td>
-    <td>اَلْعَادَةُ مُحَـكَّمَةٌ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#27';">
-    <td>Suatu ijtihad tidak dirusak oleh ijtihad yang lain.</td>
-    <td>اَلْإِجْتِهَادُ لَايُنْقَضُ بِالْإِجْتِهَادِ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#28';">
-    <td>Apabila halal dan haram berkumpul, maka dimenangkan yang haram.</td>
-    <td>اِذَا اجْتَمَعَ الْحَلَالُ وَالْحَرَامُ غُلِبَ الْحَرَامُ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#29';">
-    <td>Apabila dalam hal ibadah berkumpul unsur hadlor (mukim) dan unsur safar (berpergian), maka dimenangkan unsur hadlor.</td>
-    <td>اِذَا اجْتَمَعَ فِى الْعِبَادَةِ جَانِبُ اْلحَضَرِ وَجَانِبُ السَّفَرِ غُلِبَ جَانِبُ الْحَضَرِ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#30';">
-    <td>Apabila terjadi pertentangan antara mani’ (penghalang) dan muktadi (yang ditetapkan), maka dimenangkan mani’.</td>
-    <td>اِذَا تَعَارَضَ اَلْمَانِعُ وَالْمُقْتَضِى غُلِبَ اَلْمَانِعُ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#31';">
-    <td>Mendahululkan orang lain dalam hal ibadah itu dimakruhkan, sedangkan dalam hal selain ibadah itu disunahkan.</td>
-    <td>اَلْإِيْثَارُ فِى اْلقُرَبِ مَكْرُوْهٌ وَفِىْ غَيْرِهَا مَحْبُوْبٌ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#32';">
-    <td>Pengikut itu mengikuti yang diikuti.</td>
-    <td>اَلتَّابِعُ تَابِعٌ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#33';">
-    <td>Pengikut itu tidak dihukumi secara tersendiri (dari yang diikuti).</td>
-    <td>اَلتَّابِعُ لَا يُفْرَدُ بِالْحُكْمِ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#34';">
-    <td>Pengikut gugur disebabkan gugurnya yang diikuti.</td>
-    <td>اَلتَّابِعُ يَسْقُطُ بِسُقُوْطِ الْمَتْبُوْعِ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#35';">
-    <td>Cabang gugur apabila induknya gugur.</td>
-    <td>اَلْفَرْعُ يَسْقُطُ اِذَا سَقَطَ اَلْأَصْلُ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#36';">
-    <td>Pengikut tidak boleh mendahului yang diikuti.</td>
-    <td>اَلتَّابِعُ لَا يَتَقَدَّمُ عَلَى الْمَتْبُوْعِ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#37';">
-    <td>Dimaafkan dalam perkara yang mengikuti, sesuatu yang tidak dimaafkan dalam perkara lain.</td>
-    <td>يُغْتَفَرُ فِى التَّوَابِعِ مَا لَا يُغْتَفَرُ فِىْ غَيْرِهَا</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#38';">
-    <td>Sesuatu yang dimaafkan karena ikut-ikutan tidak dapat dimaafkan karena ada kesengajaan.</td>
-    <td>يُغْتَفَرُ فِى الشَّيْئِ ضَمْنًا مَالَايُغْتَفَرُ فِيْهِ قَصْدًا</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#39';">
-    <td>Dapat dimaafkan (dima’fu) bagi yang menirukan, tapi tidak dapat dimaafkan bagi yang memulainya.</td>
-    <td>يُغْتَفَرُ فِى الثَّوَانِى مَالَايُغْتَفَرُ فِى الْأَوَائِلِ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#40';">
-    <td>Tindakan imam terhadap rakyatnya harus dikaitkan dengan kemaslahatan.</td>
-    <td>تَصَرُّفُ اْلإِمَامِ لِلرَّعِيَّةِ مَنُوْطٌ بِالْمَصْلَحَةِ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#41';">
-    <td>Hukuman had gugur apabila masih meragukan.</td>
-    <td>اَلْحُدُوْدُ تَسْقُطُ بِالشُّبُهَاتِ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#42';">
-    <td>Kesyubhatan menggugurkan hukuman had.</td>
-    <td>اَلشُّبْهَةُ تَسْقُطُ اَلْحُدَّ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#43';">
-    <td>Kesyubhatan tidak menggugurkan ta’zir, tapi menggugurkan kafarah.</td>
-    <td>اَلشُّبْهَةُ لَاتَسْقُطُ اَلتَّعْزِيْرَ وَتَسْقُطُ اَلْكَفَارَةَ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#44';">
-    <td>Orang yang merdeka tidak masuk dalam belenggu kekuasaan.</td>
-    <td>اَلْحُرُّ لَا يَدْخُلُ تَحْتَ الْيَدِ</td>
-  </tr>
-  <tr onclick="document.location = 'index.html#45';">
-    <td>Yang menjaga sesuatu, hukumnya sama dengan apa yang dijaga.</td>
-    <td>اَلْحَرِيْمُ لَهُ حُكْمُ مَا هُوَ حَرِيْمٌ لَهُ</td>
-  </tr>
-</table>
+        <table id="myTable">
+          <tr class="header">
+            <th style="width:60%;"></th>
+            <th style="width:40%;"></th>
+          </tr>
+          <tr onclick="document.location = 'index.html#1';">
+            <td>Setiap perkara itu sesuai dengan maksudnya.</td>
+            <td>اَلْاُمُوْرُ بِمَقَاصِدِهَا</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#2';">
+            <td>Sesuatu yang tidak disyaratkan menentukannya secara global dan terperinci, apabila salah dalam menentukannya tidak berbahaya atau tidak berpengaruh.</td>
+            <td>مَا لَا يُشْتَرَطُ لَهُ التَعَرَّضُ جُمْلَةً وَتَفْصِيْلًا اِذَا عَيَّنَهُ وَاَخْطَاءَ لَمْ يَضُرَّ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#3';">
+            <td>Sesuatu yang di dalamnya disyaratkan ta’yin (menentukan), maka jika salah dalam menentukannya akan membatalkan.</td>
+            <td>مَا يُشْتَرَطُ فِيْهِ التَعْيِـيْن ُفَالْخَطَاءُ فِيْهِ مُبْطِلٌ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#4';">
+            <td>Sesuatu yang disyaratkan menentukannya secara global – tidak secara rinci – maka jika salah dalam menentukannya akan berbahaya / berpengaruh.</td>
+            <td>مَا يُشْتَرَطُ التَعَرُّضُ جُمْلَةً لَا تَفْصِيْلًا اِذَا عَيَّنَهُ وَاَخْطَاءَ ضَرَّ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#5';">
+            <td>Tujuan lafal tergantung pada niat orang yang mengucapkannya.</td>
+            <td>مَقَاصِدُ اللَّفْظِ عَلَى نِـيَّـةِ الْلَافِظِ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#6';">
+            <td>Keyakinan itu tidak bisa dihilangkan dengan keragu-raguan.</td>
+            <td>اَلْيَقِيْنُ لَايُزَالُ بِالشَكِّ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#7';">
+            <td>Yang menjadi patokan adalah tetapnya sesuatu menurut keadaan semula.</td>
+            <td>اَلْأَصْلُ بَقَاءُ مَا كَانَ عَلَى مَا كَانَ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#8';">
+            <td>Menurut asalnya setiap orang itu bebas dari tanggungan.</td>
+            <td>اَلْأَصْلُ بَرَاءَةُ الذِّمَّةِ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#9';">
+            <td>Jika seseorang ragu apakah ia sudah mengerjakan sesuatu atau belum, maka ia dianggap belum melakukannya.</td>
+            <td>مَنْ شَكَّ أَفَعَلَ شَيْأً اَمْ لَا فَالْأَصْلُ أَنَّهُ لَمْ يَفْعَلْهُ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#10';">
+            <td>Asal dari segala hukum adalah tidak adanya suatu beban.</td>
+            <td>اَلْأَصْلُ اَلْعَدَمُ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#11';">
+            <td>Pada dasarnya penetapan suatu peristiwa didasarkan pada waktu yang terdekat (dengan peristiwa tersebut).</td>
+            <td>اَلْأَصْلُ فِيْ كُلِّ حَادِثٍ اَنْ يُقَدَّرَ بِاَقْرَبِ الزَّمَانِ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#12';">
+            <td>Asal dari segala seuatu itu adalah boleh, sampai ada dalil (petunjuk) yang menyatakan keharamannya.</td>
+            <td>اَلْأَصْلُ فِي الْاَشْيَاءِ اَلْاِبَاحَةْ حَتَّى يَدُلُّ اَلدَّلِيْلُ عَلَى التَّحْرِيْمِ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#13';">
+            <td>Hukum asal farji adalah haram.</td>
+            <td>اَلْأَصْلُ فِي الْاَبْضَاعِ اَلْحَظْرُ/ اَلتَّحْرِيْمُ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#14';">
+            <td>Asal dari perkataan adalah yang hakiki.</td>
+            <td>اَلْأَصْلُ فِي اْلكَلَامِ اَلْحَقِيْقَةِ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#15';">
+            <td>Asalnya tiap perkara yang datang kemudian adalah tidak ada.</td>
+            <td>اَلْأَصْلُ فِي الْأُمُوْرِ الْعَارِضَةِ اَلْعَدَمُ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#16';">
+            <td>Kesukaran itu mengharuskan adanya kemudahan.</td>
+            <td>اَلْمَشَقَّةُ تَجْلِبُ التَيْسِيْرَ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#17';">
+            <td>Jika suatu perkara itu sempit, maka bisa menjadi longgar.</td>
+            <td>اِذَا ضَاقَ الْاَمْرُ اِتَّسَعَ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#18';">
+            <td>Jika suatu perkara itu longgar, maka menjadi sempit.</td>
+            <td>اِذَا اِتَّسَعَ الْاَمْرُ ضَاقَ </td>
+          </tr>
+          <tr onclick="document.location = 'index.html#19';">
+            <td>Kemudharatan itu dihilangkan.</td>
+            <td>اَلضَّرَرُ يُزَالُ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#20';">
+            <td>Keadaan darurat bisa membolehkan sesuatu yang dilarang.</td>
+            <td>اَلضَّرُوْرَةُ تُبِيْحُ الْمَحْظُوْرَاتِ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#21';">
+            <td>Sesuatu yang dibolehkan karena darurat, disesuaikan dengan kadar kedaruratannya. (Sesuatu yang haram mengerjakannya, haram pula mencarinya.)</td>
+            <td>مَا اُبِيْحُ لِلضَّرُوْرَةِ يُقَدَّرُ بِقَدْرِضَرَرِهَا ( مَاجَازَ لِعُذْرٍ بَطَلَ بِزَوَالِهِ)</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#22';">
+            <td>Kemudharatan tidak boleh dihilangkan dengan kemudharatan yang lain (yang setingkat).</td>
+            <td>اَلضَّرَرُ لَايُزَالُ بِالضَّرَرِ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#23';">
+            <td>Jika dua kerusakan saling berlawanan, maka dipelihara yang lebih berat kemudharatannya dengan melaksanakan yang lebih ringan (madharatnya).</td>
+            <td>إِذَا تَعَارَضَ اَلْمَفْسَدَتَانِ رُوْعِيَ اَعْظَمُهُمَا ضَرَرًا بِاِرْتِكَابِ اَخَفِّهِمَا</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#24';">
+            <td>Menolak kerusakan lebih didahulukan daripada menarik kemaslahatan.</td>
+            <td>دَرْءُ الْمَفَاسِدِ اَوْلَى مِنْ جَلْبِ الْمَصَالِحِ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#25';">
+            <td>Kebutuhan itu menempati tempatnya darurat, baik kebutuhan yang bersifat umum maupun yang khusus</td>
+            <td>اَلْحَاجَةُ تَنْزِلُ مَنْزِلَةَ الضَّرُوْرَةِ عَامَةً كَانَتْ اَوْ خَاصَةً</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#26';">
+            <td>Adat-kebiasaan bisa dijadikan patokan hukum.</td>
+            <td>اَلْعَادَةُ مُحَـكَّمَةٌ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#27';">
+            <td>Suatu ijtihad tidak dirusak oleh ijtihad yang lain.</td>
+            <td>اَلْإِجْتِهَادُ لَايُنْقَضُ بِالْإِجْتِهَادِ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#28';">
+            <td>Apabila halal dan haram berkumpul, maka dimenangkan yang haram.</td>
+            <td>اِذَا اجْتَمَعَ الْحَلَالُ وَالْحَرَامُ غُلِبَ الْحَرَامُ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#29';">
+            <td>Apabila dalam hal ibadah berkumpul unsur hadlor (mukim) dan unsur safar (berpergian), maka dimenangkan unsur hadlor.</td>
+            <td>اِذَا اجْتَمَعَ فِى الْعِبَادَةِ جَانِبُ اْلحَضَرِ وَجَانِبُ السَّفَرِ غُلِبَ جَانِبُ الْحَضَرِ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#30';">
+            <td>Apabila terjadi pertentangan antara mani’ (penghalang) dan muktadi (yang ditetapkan), maka dimenangkan mani’.</td>
+            <td>اِذَا تَعَارَضَ اَلْمَانِعُ وَالْمُقْتَضِى غُلِبَ اَلْمَانِعُ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#31';">
+            <td>Mendahululkan orang lain dalam hal ibadah itu dimakruhkan, sedangkan dalam hal selain ibadah itu disunahkan.</td>
+            <td>اَلْإِيْثَارُ فِى اْلقُرَبِ مَكْرُوْهٌ وَفِىْ غَيْرِهَا مَحْبُوْبٌ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#32';">
+            <td>Pengikut itu mengikuti yang diikuti.</td>
+            <td>اَلتَّابِعُ تَابِعٌ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#33';">
+            <td>Pengikut itu tidak dihukumi secara tersendiri (dari yang diikuti).</td>
+            <td>اَلتَّابِعُ لَا يُفْرَدُ بِالْحُكْمِ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#34';">
+            <td>Pengikut gugur disebabkan gugurnya yang diikuti.</td>
+            <td>اَلتَّابِعُ يَسْقُطُ بِسُقُوْطِ الْمَتْبُوْعِ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#35';">
+            <td>Cabang gugur apabila induknya gugur.</td>
+            <td>اَلْفَرْعُ يَسْقُطُ اِذَا سَقَطَ اَلْأَصْلُ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#36';">
+            <td>Pengikut tidak boleh mendahului yang diikuti.</td>
+            <td>اَلتَّابِعُ لَا يَتَقَدَّمُ عَلَى الْمَتْبُوْعِ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#37';">
+            <td>Dimaafkan dalam perkara yang mengikuti, sesuatu yang tidak dimaafkan dalam perkara lain.</td>
+            <td>يُغْتَفَرُ فِى التَّوَابِعِ مَا لَا يُغْتَفَرُ فِىْ غَيْرِهَا</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#38';">
+            <td>Sesuatu yang dimaafkan karena ikut-ikutan tidak dapat dimaafkan karena ada kesengajaan.</td>
+            <td>يُغْتَفَرُ فِى الشَّيْئِ ضَمْنًا مَالَايُغْتَفَرُ فِيْهِ قَصْدًا</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#39';">
+            <td>Dapat dimaafkan (dima’fu) bagi yang menirukan, tapi tidak dapat dimaafkan bagi yang memulainya.</td>
+            <td>يُغْتَفَرُ فِى الثَّوَانِى مَالَايُغْتَفَرُ فِى الْأَوَائِلِ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#40';">
+            <td>Tindakan imam terhadap rakyatnya harus dikaitkan dengan kemaslahatan.</td>
+            <td>تَصَرُّفُ اْلإِمَامِ لِلرَّعِيَّةِ مَنُوْطٌ بِالْمَصْلَحَةِ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#41';">
+            <td>Hukuman had gugur apabila masih meragukan.</td>
+            <td>اَلْحُدُوْدُ تَسْقُطُ بِالشُّبُهَاتِ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#42';">
+            <td>Kesyubhatan menggugurkan hukuman had.</td>
+            <td>اَلشُّبْهَةُ تَسْقُطُ اَلْحُدَّ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#43';">
+            <td>Kesyubhatan tidak menggugurkan ta’zir, tapi menggugurkan kafarah.</td>
+            <td>اَلشُّبْهَةُ لَاتَسْقُطُ اَلتَّعْزِيْرَ وَتَسْقُطُ اَلْكَفَارَةَ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#44';">
+            <td>Orang yang merdeka tidak masuk dalam belenggu kekuasaan.</td>
+            <td>اَلْحُرُّ لَا يَدْخُلُ تَحْتَ الْيَدِ</td>
+          </tr>
+          <tr onclick="document.location = 'index.html#45';">
+            <td>Yang menjaga sesuatu, hukumnya sama dengan apa yang dijaga.</td>
+            <td>اَلْحَرِيْمُ لَهُ حُكْمُ مَا هُوَ حَرِيْمٌ لَهُ</td>
+          </tr>
+        </table>
       </div>
       <div class="modal-footer">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal2 -->
+<div style="opacity: 0.8;" id="myModal1" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">اَلْاُمُوْرُ بِمَقَاصِدِهَا</h4>
+        <h4>Segala sesuatu tergantung pada tujuannya.</h4>
+      </div>
+      <div class="modal-body" style="font-size:12px; ">
+
+            <h5>Dasar Kaidah</h5>
+            Sabda Rasulullah SAW. :
+            "انما الاعمال بالنيات وانما لكل امرئ ما نوى رواه البخارى
+            Artinya:
+            “Segala sesuatu tergantung pada niatnya, dan apa yang didapatkan ialah apa yang telah diniatkan.” (HR. Bukhari).
+            <hr/>
+            <h5>Contoh Kasus</h5>
+            Diwajibkannya niat dalam berwudhu, mandi, shalat dan puasa.<br/><br/>
+            Penggunaan kata kiasan (kinayah) dalam talak. Seperti ucapann seorang suami kepada istrinya: انت خالية (engkau adalah wanita yang terasing). Jika suami bertujuan menceraikan dengan ucapannya tersebut, maka jatuhlah talak kepada istrinya, namun jika ia tidak berniat menceraikan maka tidak jatuh talak-nya.
+      </div>
+      <div class="modal-footer" style="text-align:left;font-size:10px;">
+          Powered by IDWEBDesigner
       </div>
     </div>
 
