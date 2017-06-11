@@ -28,13 +28,20 @@
 	<link rel='dns-prefetch' href='//s.w.org' />
 	<link rel="alternate" type="application/rss+xml" title="Thirdman &raquo; Startseite Kommentar-Feed" href="http://designer.web.id" />
 
+  <link rel="stylesheet" href="android/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="android/modal.css">
+  <script src="android/modal.js"></script>
+
 	<style type="text/css">
 		img.wp-smiley,img.emoji{display:inline !important;border:none !important;box-shadow:none !important;height:1em !important;width:1em !important;margin:0
 		.07em !important;vertical-align:-0.1em !important;background:none !important;padding:0
 		!important}
 	</style>
 	<style type="text/css">
-.button {
+    .button {
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
@@ -70,11 +77,11 @@
 <body class="home page-template page-template-template-fullpage page-template-template-fullpage-php page page-id-2">
 
 	<header class="site-header">
-		<button class="toggle-offcanvas"> <span class="_sr-only">Hauptmenü öffnen</span>  <span class="hamburger hamburger-light"> <span></span>  <span></span>  <span></span>  <span></span> </span>
-		</button>
+		<span style="padding-top:25px;padding-left:25px;position:fixed;" data-toggle="modal" data-target="#modal-fullscreen"> <span class="_sr-only">Kaidah Fiqh</span>  <span class="hamburger hamburger-light"> <span></span>  <span></span>  <span></span>  <span></span> </span>
+		</span>
 		<a id="main-logo" class="site-logo logo-light" href="index.html">
 		</a>
-		<button class="btn -back" id="browserback"><span class="_sr-only">zurück</span>
+		<button class="btn -back" id="browserback"><span class="_sr-only">Kaidah Fiqh</span>
 		</button>
 	</header>
 	<div canvas="container">
@@ -127,12 +134,6 @@
 									</div>
 									<div class="content -light">
                                     <p style="color: #ffffff;font-size: 12px;" onclick="copyToClipboard('#copy1')">COPY TO CLIPBOARD</p>
-
-                                        <a https://www.facebook.com/dialog/share?
-    app_id=145634995501895
-    &display=popup
-    &href=URL_TO_SHARE
-    &redirect_uri=RETURN_URL>test</a>
 
 									</div>
 								</div>
@@ -1608,43 +1609,25 @@
 			</div>
 		</section>
 	</div>
+
+
+
+<!-- Modal fullscreen -->
+<div class="modal modal-fullscreen fade" id="modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 style="color: #ffffff" class="modal-title" id="myModalLabel">Kaidah Fiqh</h4>
+      </div>
+      <div style="color: #ffffff" class="modal-body">
+        ...
+      </div>
+    </div>
+  </div>
+</div>
+
 	<div class="offcanvas" off-canvas="id-1 left reveal">
-		<nav>
-			<ul class="nav-primary">
-				<li class="nav-primary-item"> <a href="#1">اَلْاُمُوْرُ بِمَقَاصِدِهَا </a></li>
-				<li class="nav-primary-item"> <a href="#2">مَا لَا يُشْتَرَطُ لَهُ التَعَرَّضُ جُمْلَةً وَتَفْصِيْلًا اِذَا عَيَّنَهُ وَاَخْطَاءَ لَمْ يَضُرَّ</a></li>
-				<li class="nav-primary-item"> <a href="#3">مَا يُشْتَرَطُ فِيْهِ التَعْيِـيْن ُفَالْخَطَاءُ فِيْهِ مُبْطِلٌ </a></li>
-				<li class="nav-primary-item"> <a href="#4">مَا يُشْتَرَطُ التَعَرُّضُ جُمْلَةً لَا تَفْصِيْلًا اِذَا عَيَّنَهُ وَاَخْطَاءَ ضَرَّ</a></li>
-				<li class="nav-primary-item"> <a href="#5">مَقَاصِدُ اللَّفْظِ عَلَى نِـيَّـةِ الْلَافِظِ</a></li>
-				<li class="nav-primary-item"> <a href="#6">اَلْيَقِيْنُ لَايُزَالُ بِالشَكِّ</a></li>
-				<li class="nav-primary-item"> <a href="#7">اَلْأَصْلُ بَقَاءُ مَا كَانَ عَلَى مَا كَانَ</a></li>
-				<li class="nav-primary-item"> <a href="#8">اَلْأَصْلُ بَرَاءَةُ الذِّمَّةِ</a></li>
-				<li class="nav-primary-item"> <a href="#9">مَنْ شَكَّ أَفَعَلَ شَيْأً اَمْ لَا فَالْأَصْلُ أَنَّهُ لَمْ يَفْعَلْهُ</a></li>
-				<li class="nav-primary-item"> <a href="#10">اَلْأَصْلُ اَلْعَدَمُ</a></li>
-				<li class="nav-primary-item"> <a href="#11">اَلْأَصْلُ فِيْ كُلِّ حَادِثٍ اَنْ يُقَدَّرَ بِاَقْرَبِ الزَّمَانِ</a></li>
-				<li class="nav-primary-item"> <a href="#12">اَلْأَصْلُ فِي الْاَشْيَاءِ اَلْاِبَاحَةْ حَتَّى يَدُلُّ اَلدَّلِيْلُ عَلَى التَّحْرِيْمِ</a></li>
-				<li class="nav-primary-item"> <a href="#13">اَلْأَصْلُ فِي الْاَبْضَاعِ اَلْحَظْرُ/ اَلتَّحْرِيْمُ</a></li>
-				<li class="nav-primary-item"> <a href="#14">اَلْأَصْلُ فِي اْلكَلَامِ اَلْحَقِيْقَةِ</a></li>
-				<li class="nav-primary-item"> <a href="#15">اَلْأَصْلُ فِي الْأُمُوْرِ الْعَارِضَةِ اَلْعَدَمُ</a></li>
-				<li class="nav-primary-item"> <a href="#16">اَلْمَشَقَّةُ تَجْلِبُ التَيْسِيْرَ</a></li>
-				<li class="nav-primary-item"> <a href="#17">اِذَا ضَاقَ الْاَمْرُ اِتَّسَعَ
-</a></li>
-				<li class="nav-primary-item"> <a href="index.html#3"></a></li>
-				<li class="nav-primary-item"> <a href="index.html#3"></a></li>
-				<li class="nav-primary-item"> <a href="index.html#3"></a></li>
-				<li class="nav-primary-item"> <a href="index.html#3"></a></li>
-				<li class="nav-primary-item"> <a href="index.html#3"></a></li>
-				<li class="nav-primary-item"> <a href="index.html#3"></a></li>
-				<li class="nav-primary-item"> <a href="index.html#3"></a></li>
-				<li class="nav-primary-item"> <a href="index.html#3"></a></li>
-				<li class="nav-primary-item"> <a href="index.html#3"></a></li>
-				<li class="nav-primary-item"> <a href="index.html#3"></a></li>
-				<li class="nav-primary-item"> <a href="index.html#3"></a></li>
-				<li class="nav-primary-item"> <a href="index.html#3"></a></li>
-				<li class="nav-primary-item"> <a href="index.html#3"></a></li>
-				
-			</ul>
-		</nav>
 	</div>
 	<script type="text/javascript" src="wp-content/cache/minify/a4174.js"></script>
 	<script type='text/javascript'>
